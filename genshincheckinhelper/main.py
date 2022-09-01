@@ -183,7 +183,7 @@ def display_time(time, short=False, min_units=1, max_units=None):
 def task_common(r, d, text_temp1, text_temp2):
     result = []
     for i in range(len(r)):
-        if d and d[i]:
+        if d and i < len(d) and d[i]:
             d[i]['month'] = gh.month()
             r[i]['addons'] = text_temp2.format(**d[i])
         message = text_temp1.format(**r[i])
