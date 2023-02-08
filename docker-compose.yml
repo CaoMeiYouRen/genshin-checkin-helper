@@ -3,7 +3,7 @@ version: "3"
 services:
     genshinhelper:
         build: .
-        restart: always
+        restart: "no"
         #  image: yindan/genshinhelper
         environment:
             TZ: Asia/Shanghai
